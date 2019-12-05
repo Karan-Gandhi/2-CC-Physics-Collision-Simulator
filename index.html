@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>Physics Collision Simulator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/main.css"
+        />
+
+        <script src="js/block.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="root" id="root"></div>
+        <div class="data">
+            <strong>Info : </strong><br />
+            <div id="count"></div>
+            Velocity :
+            <input id="vel" type="text" placeholder="Velocity" /> <br />Mass of
+            Block 1 :
+            <input type="text" id="m1" placeholder="Mass of Block 1" />
+            <br />Mass of Block 2 :
+            <input type="text" id="m2" placeholder="Mass of Block 2" /><br />
+            <input
+                type="button"
+                value="Start simulation"
+                onclick="simulate()"
+            />
+            <input type="button" value="Reset simulation" onclick="reset()" />
+        </div>
+    </body>
+</html>

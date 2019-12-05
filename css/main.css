@@ -1,0 +1,26 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+div#root {
+    height: 400px;
+    width: 100%;
+    background: lightgrey;
+    position: absolute;
+}
+
+div#block1 {
+    transition: linear 0.1s;
+}
+
+div#block2 {
+    transition: linear 0.1s;
+}
+
+.data {
+    position: absolute;
+    top: 420px;
+    left: 20px;
+}
