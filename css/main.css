@@ -24,3 +24,21 @@ div#block2 {
     top: 420px;
     left: 20px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+.side-data {
+    position: absolute;
+    top: 420px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}

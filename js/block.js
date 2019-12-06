@@ -3,6 +3,7 @@ class Block {
         this.x = x;
         this.mass = m;
         this.vel = v;
+        this.originalVel = v;
         this.originalX = x;
         this.height = h;
         this.scale = scl;
@@ -66,7 +67,9 @@ class Block {
         this.mass = m;
     }
 
-    remove() {
+    reset() {
         this.block.parentNode.removeChild(this.block);
+        this.x = this.originalX;
+        this.vel = this.originalVel;
     }
 }

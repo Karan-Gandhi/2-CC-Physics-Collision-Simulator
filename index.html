@@ -20,20 +20,30 @@
     <body>
         <div class="root" id="root"></div>
         <div class="data">
-            <strong>Info : </strong><br />
-            <div id="count"></div>
+            <h2><strong>Info : </strong></h2>
             Velocity :
             <input id="vel" type="text" placeholder="Velocity" /> <br />Mass of
             Block 1 :
             <input type="text" id="m1" placeholder="Mass of Block 1" />
             <br />Mass of Block 2 :
             <input type="text" id="m2" placeholder="Mass of Block 2" /><br />
+            <br />
+            <h4><strong>Advanced : </strong></h4>
+            Timestamps :
+            <input type="text" id="Timestamps" placeholder="Timestamps" /><br />
+            <br />
             <input
                 type="button"
                 value="Start simulation"
                 onclick="simulate()"
             />
             <input type="button" value="Reset simulation" onclick="reset()" />
+        </div>
+        <div class="side-data">
+            <h2><strong>Current Data : </strong></h2>
+            <div id="count"></div>
+            <div id="velofb1"></div>
+            <div id="velofb2"></div>
         </div>
     </body>
 </html>

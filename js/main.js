@@ -16,6 +16,7 @@ window.onload = () => {
     document.getElementById("vel").value = vel;
     document.getElementById("m1").value = m1;
     document.getElementById("m2").value = m2;
+    document.getElementById("Timestamps").value = timeStamps;
 };
 
 setInterval(() => {
@@ -34,26 +35,40 @@ setInterval(() => {
             count++;
             console.log(count);
         }
+
+        b1.display();
+        b2.display();
+
+        b1.update();
+        b2.update();
+
+        document.getElementById("count").innerHTML = "collisions : " + count;
+        document.getElementById("velofb1").innerHTML =
+            "Velocity of block 1 : " + b1.vel;
+        document.getElementById("velofb2").innerHTML =
+            "Velocity of block 2 : " + b2.vel;
     }
-
-    b1.display();
-    b2.display();
-
-    b1.update();
-    b2.update();
-    document.getElementById("count").innerHTML = "collisions : " + count;
 }, 100);
 
 function simulate() {
-    b1.setVel(parseFloat(document.getElementById("vel").value, 10));
-    b1.setMass(parseFloat(document.getElementById("m1").value, 10));
-    b2.setMass(parseFloat(document.getElementById("m2").value), 10);
+    setData();
 }
 
 function reset() {
-    b1.remove();
-    b2.remove();
+    b1.reset();
+    b2.reset();
 
     b1.init();
     b2.init();
+
+    setData();
+
+    count = 0;
+}
+
+function setData() {
+    b1.setVel(parseFloat(document.getElementById("vel").value, 10));
+    b1.setMass(parseFloat(document.getElementById("m1").value, 10));
+    b2.setMass(parseFloat(document.getElementById("m2").value), 10);
+    timeStamps = parseFloat(document.getElementById("Timestamps").value);
 }
