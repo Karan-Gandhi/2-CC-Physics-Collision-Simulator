@@ -5,9 +5,10 @@ var digits = 3;
 var vel = 10;
 var count = 0;
 var timeStamps = 1;
+var [h1, h2] = [m1 * 0.1, m2 * 0.1];
 
-var b1 = new Block(1000, m1, vel, m1 * 0.1, scale, 1);
-var b2 = new Block(500, m2, 0, m2 * 0.1, scale, 2);
+var b1 = new Block(1000, m1, vel, h1, scale, 1);
+var b2 = new Block(500, m2, 0, h2, scale, 2);
 
 window.onload = () => {
     b1.init();
@@ -27,13 +28,19 @@ setInterval(() => {
             b1.vel = v1;
             b2.vel = v2;
             count++;
-            console.log(count);
+            // console.log(count);
         }
 
         if (b2.hitWall()) {
             b2.vel = -b2.vel;
             count++;
-            console.log(count);
+            // console.log(count);
+        }
+
+        if (b1.hitWall()) {
+            b1.vel = -b1.vel;
+            count++;
+            // console.log(count);
         }
 
         b1.display();
@@ -69,6 +76,13 @@ function reset() {
 function setData() {
     b1.setVel(parseFloat(document.getElementById("vel").value, 10));
     b1.setMass(parseFloat(document.getElementById("m1").value, 10));
-    b2.setMass(parseFloat(document.getElementById("m2").value), 10);
+    b2.setMass(parseFloat(document.getElementById("m2").value, 10));
     timeStamps = parseFloat(document.getElementById("Timestamps").value);
+    m1 = parseFloat(document.getElementById("m1").value, 10);
+    m2 = parseFloat(document.getElementById("m2").value, 10);
+    [h1, h2] = [m1 * 0.1, m2 * 0.1];
+    console.log(h1, h2);
+
+    b1.setHeight(h1);
+    b2.setHeight(h2);
 }

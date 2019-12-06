@@ -52,7 +52,10 @@ class Block {
     }
 
     hitWall() {
-        if (this.x <= 0) {
+        if (
+            this.x <= 0 ||
+            this.x + this.height * this.scale >= window.innerWidth
+        ) {
             return true;
         } else {
             return false;
@@ -65,6 +68,12 @@ class Block {
 
     setMass(m) {
         this.mass = m;
+    }
+
+    setHeight(h) {
+        this.block.style.height = `${h * this.scale}px`;
+        this.block.style.width = `${h * this.scale}px`;
+        this.height = h;
     }
 
     reset() {
