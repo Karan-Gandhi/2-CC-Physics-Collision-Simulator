@@ -1,4 +1,4 @@
-# 2-CC-Physics-Collision-Simulator
+# Physics-Collision-Simulator
 
 This is a Coding Challenge where I attempt to try and code a Collision simulation using the law of conservation of momentum. This Project is avalible on :  
 
