@@ -1,6 +1,8 @@
 # 2-CC-Physics-Collision-Simulator
 
-This is a Coding Challenge where I attempt to try and code a Collision simulation using the law of conservation of momentum. Here there are two blocks which collide with each other having a perfectly elastic collision :
+This is a Coding Challenge where I attempt to try and code a Collision simulation using the law of conservation of momentum. This Project is avalible on :  
+
+Here there are two blocks which collide with each other having a perfectly elastic collision :
 
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e5/Elastischer_sto%C3%9F3.gif)
 
