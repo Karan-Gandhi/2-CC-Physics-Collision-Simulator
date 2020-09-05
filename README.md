@@ -1,6 +1,6 @@
 # Physics-Collision-Simulator
 
-This is a Coding Challenge where I attempt to try and code a Collision simulation using the law of conservation of momentum. This Project is avalible on :  https://karan-gandhi.github.io/2-CC-Physics-Collision-Simulator/
+This is a Coding Challenge where I attempt to try and code a Collision simulation using the law of conservation of momentum. This Project is avalible on :  https://karan-gandhi.github.io/Physics-Collision-Simulator/
 
 Here there are two blocks which collide with each other having a perfectly elastic collision :
 
