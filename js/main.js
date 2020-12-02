@@ -1,11 +1,11 @@
-var scale = 1;
+var scale = 10;
 var m1 = 100;
 var m2 = 10;
 var digits = 3;
 var vel = 10;
 var count = 0;
 var timeStamps = 1;
-var [h1, h2] = [m1 * 0.1, m2 * 0.1];
+var [h1, h2] = [m1 * 0.05, m2 * 0.05];
 
 var b1 = new Block(1000, m1, vel, h1, scale, 1);
 var b2 = new Block(500, m2, 0, h2, scale, 2);
@@ -80,7 +80,7 @@ function setData() {
     timeStamps = parseFloat(document.getElementById("Timestamps").value);
     m1 = parseFloat(document.getElementById("m1").value, 10);
     m2 = parseFloat(document.getElementById("m2").value, 10);
-    [h1, h2] = [m1 * 0.1, m2 * 0.1];
+    [h1, h2] = [m1 * 0.05, m2 * 0.05];
     console.log(h1, h2);
 
     b1.setHeight(h1);
