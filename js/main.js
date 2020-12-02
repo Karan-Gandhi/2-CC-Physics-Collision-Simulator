@@ -6,7 +6,7 @@ var vel = 10;
 var count = 0;
 var timeStamps = 1;
 // var [h1, h2] = [m1 * 0.05, m2 * 0.05];
-var [h1, h2] = [100, 100]
+var [h1, h2] = [1, 1]
 
 var b1 = new Block(1000, m1, vel, h1, scale, 1);
 var b2 = new Block(500, m2, 0, h2, scale, 2);
