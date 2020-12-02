@@ -1,4 +1,4 @@
-var scale = 10;
+var scale = 1;
 var m1 = 100;
 var m2 = 10;
 var digits = 3;
